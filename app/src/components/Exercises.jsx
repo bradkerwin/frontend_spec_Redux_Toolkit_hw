@@ -17,6 +17,7 @@ const Exercises = () => {
           {
               exercises.map((exercise, idx) => (
                   <p key={idx}>{exercise.exercise}</p>
+                  // <Button onClick={() => handleAddToPlan}>Add to Plan</Button>
               ))
           }
       </div>
