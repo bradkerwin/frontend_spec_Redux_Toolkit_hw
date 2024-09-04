@@ -1,5 +1,5 @@
 import exercises from "../data/Exercises"
-import { Container, Card, Button } from 'react-bootstrap'
+import { Container, Card } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 
 const ExerciseSelect = () => {
@@ -8,7 +8,7 @@ const ExerciseSelect = () => {
     const exercises = useSelector((state) => state.exercises)
 
     const addToWorkout = (id) => {
-        dispatch(addExercise((id)))
+        dispatch(exercises((id)))
     }
   return (
     <Container>

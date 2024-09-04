@@ -1,11 +1,11 @@
 import { Navbar, Nav } from "react-bootstrap";
-import NavLink from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 function NavigationBar() {
     return (
         <Navbar bg="primary" expand="md">
-            <Navbar.Brand>Your Workout Plan</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
+            <Navbar.Brand>Navigate</Navbar.Brand>
+            {/* <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle> */}
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
 
