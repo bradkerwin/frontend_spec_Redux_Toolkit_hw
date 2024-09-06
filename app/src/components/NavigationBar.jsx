@@ -11,7 +11,7 @@ function NavigationBar() {
 
                     <Nav.Link as={NavLink} to="/exercises" activeclassname="active">Available Exercises</Nav.Link>
 
-                    <Nav.Link as={NavLink} to="/exerciseselect" activeclassname="active">View Your Exercises</Nav.Link>
+                    <Nav.Link as={NavLink} to="/exerciseslice" activeclassname="active">View Your Exercises</Nav.Link>
 
                     <Nav.Link as={NavLink} to="/" activeclassname="active">Home</Nav.Link>
 
