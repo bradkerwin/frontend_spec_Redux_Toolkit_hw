@@ -8,7 +8,7 @@ const Exercises = () => {
   const dispatch = useDispatch()
 
   const handleAddToPlan = (id) => {
-    dispatchEvent(addExercise({id}))
+    dispatch(addExercise({id}))
   };
 
   return (

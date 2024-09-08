@@ -11,11 +11,14 @@ export const exerciseSlice = createSlice({
         addExercise: (state, action) => {
             const { id } = action.payload
             if (state.exercises[id]) {
+                console.log("In the if");
                 state.exercises[id] += 1
             } else {
+                console.log("In the else");
                 state.exercises[id] = 1
             }
 
+            console.log(Object.keys(state.exercises));
             state.totalExercises += 1
         },
 
@@ -28,7 +31,7 @@ export const exerciseSlice = createSlice({
                     delete state.exercises[id]
                 }
 
-                state.totalExercises += 1
+                state.totalExercises -= 1
 
             }
 
